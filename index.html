@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <title>Zabinnunnissa • Birthday Dua | نور و بركة</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<div class="bg-shimmer"></div>
+<div class="stars" id="starsContainer"></div>
+<div id="shootingStarsContainer"></div>
+<div id="nurContainer"></div>
+<div class="geometric-overlay"></div>
+
+<div class="greeting-card">
+    <div class="moon"></div>
+    <div class="mosque">
+        <div class="dome"></div>
+        <div class="minaret minaret-left"></div>
+        <div class="minaret"></div>
+        <div class="arch"></div>
+        <div class="window-glow"></div>
+    </div>
+
+    <!-- Personalized Overlay for Zabinnunnissa -->
+    <div class="play-overlay" id="playOverlay">
+        <button class="personal-btn" id="startButton">
+            <div class="greeting-name">🌸 Zabinnunnissa 🌸</div>
+            <div class="message">Your blessed birthday gift awaits…</div>
+            <div class="tap-hint"><i class="fas fa-hand-point-right"></i> Tap to begin <i class="fas fa-gift"></i></div>
+        </button>
+    </div>
+
+    <!-- Content that will appear after play -->
+    <div class="content-wrapper" id="contentWrapper">
+        <div class="content">
+            <div class="scene" id="scene1">
+                <div class="arabic bismillah">بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ</div>
+                <div class="pattern-divider"></div>
+                <div style="font-weight: 300;">In the name of Allah, the Most Gracious, the Most Merciful</div>
+            </div>
+
+            <div class="scene" id="scene2">
+                <div><i class="fas fa-star-of-life" style="color: #ffb086;"></i> <i class="fas fa-moon"></i> <i class="fas fa-feather-alt"></i></div>
+                <div style="font-size: 1.1rem; font-weight: 300;">For a soul as beautiful as her name...</div>
+                <div class="name-glow">Zabinnunnissa</div>
+                <div class="arabic" style="font-size: 1.5rem;">زَبِنُنِّسَاء</div>
+            </div>
+
+            <div class="scene" id="scene3">
+                <div style="font-size: 2rem;">🤲</div>
+                <div style="font-weight: 500;">Assalamu ‘alaikum wa rahmatullahi wa barakatuh</div>
+                <div style="font-size: 0.95rem;">May the peace, mercy, and blessings of Allah be upon you.</div>
+            </div>
+
+            <div class="scene" id="scene4">
+                <div class="date-highlight"><i class="fas fa-calendar-alt"></i> 29th March • A blessed day</div>
+                <div style="margin-top: 15px; font-weight: 500;">On your birthday, I ask Allah to grant you:</div>
+                <div style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+                    <div><i class="fas fa-heart" style="color: #ffb086;"></i> A heart always connected to Him</div>
+                    <div><i class="fas fa-seedling"></i> A life filled with <i>barakah</i> (blessings)</div>
+                    <div><i class="fas fa-tree"></i> <i>Jannah</i> as your final home</div>
+                </div>
+            </div>
+
+            <div class="scene" id="scene5">
+                <div class="dua-card">
+                    <div class="arabic" style="font-size: 1.8rem;">اللهم بارك لها في عمرها ورزقها واهلها</div>
+                    <div class="english-dua" style="margin-top: 12px;">“O Allah, bless her in her age, her provision, and her family.”</div>
+                    <div style="margin-top: 12px; font-size: 1.5rem; font-weight: bold;">Ameen. 🤲</div>
+                </div>
+            </div>
+
+            <div class="scene" id="scene6">
+                <div>May Allah accept all your du’as</div>
+                <div>and bring you closer to Him every day.</div>
+                <div class="pattern-divider"></div>
+                <div style="font-style: italic;">With sincere respect & duas,</div>
+                <div style="font-weight: 500;">✨ From someone who admires your deen ✨</div>
+                <footer>🤲 Make du’a for me too.</footer>
+            </div>
+
+            <button class="btn-replay" id="replayBtn"><i class="fas fa-sync-alt"></i> Replay Blessings</button>
+        </div>
+    </div>
+</div>
+
+<audio id="nasheedAudio" preload="auto" loop>
+    <source src="./greething_audio.mp3" type="audio/mpeg">
+</audio>
+
+<script src="./scripts.js" />
+</body>
+</html>
